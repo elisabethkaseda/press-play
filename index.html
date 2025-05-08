@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Press Play UI Kit Documentation</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- There appears to be a lot of discourse on where an aside should go in the structure of a document. Since it's a nav bar that shows the whole time, I'm putting it outside of everything. -->
+        <aside>
+            <div class="hamburger">
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 26 26">
+                    <!-- Generator: Adobe Illustrator 28.7.1, SVG Export Plug-In . SVG Version: 1.2.0 Build 142)  -->
+                    <g>
+                      <g id="Layer_1" shape-rendering="crispEdges">
+                        <rect x="2" width="22" height="2"/>
+                        <rect y="2" width="2" height="22"/>
+                        <rect x="24" y="2" width="2" height="22"/>
+                        <polygon points="21 12 21 14 20 14 20 15 19 15 19 16 18 16 18 17 17 17 17 18 16 18 16 19 15 19 15 20 13 20 13 18 14 18 14 17 15 17 15 16 16 16 16 15 17 15 17 14 5 14 5 12 17 12 17 11 16 11 16 10 15 10 15 9 14 9 14 8 13 8 13 6 15 6 15 7 16 7 16 8 17 8 17 9 18 9 18 10 19 10 19 11 20 11 20 12 21 12"/>
+                        <rect x="2" y="24" width="22" height="2"/>
+                      </g>
+                    </g>
+                </svg>
+            </div>
+            <nav>
+                <a href="#top">Top</a>
+                <a href="#about">About</a>
+                <a href="#colors">Colors</a>
+                <a href="#typography">Typography</a>
+                <a href="#links">Links</a>
+                <a href="#buttons">Buttons</a>
+                <a href="#tags">Tags</a>
+                <a href="#menus">Menus</a>
+                <a href="#form-items">Form Items</a>
+                <a href="#text-inputs" class="sub-menu">Text Inputs</a>
+                <a href="#checkboxes" class="sub-menu">Checkboxes</a>
+                <a href="#radio-buttons" class="sub-menu">Radio Buttons</a>
+                <!-- See note below in their sections. -->
+                <!-- <a href="#modals">Modals</a>
+                <a href="#cards">Cards</a> -->
+            </nav>
+        </aside>
+        <header>
+            <h1>Press Play</h1>
+            <h2>A Retro Gaming UI Kit</h2>
+        </header>
+        <main>
+            <section id="intro">
+                <p><strong>Press Play</strong> is a UI kit designed to evoke nostalgia for all those days (and late nights) spent gaming as a child. Its monochromatic color scheme and pixelated style are sure to delight fans of retro games.</p>
+            </section>
+
+            <section id="about">
+                <h2>Using This Documentation</h2>
+                <p>Each main category of this UI kit has been given its own section of information. These sections include some information about using the component, a visual representation of the component, and the HTML/CSS code for each component. You are welcome to use this code however you wish, though attribution would be appreciated.</p>
+            </section>
+
+            <section id="colors">
+                <h2>Colors</h2>
+                <p>This color scheme can be used for any projects related to nostalgia and early game systems. The green monochromatic color scheme is meant to evoke old monitors/screens, while the blue-tinged neutrals are reminiscent of some old game systems' casings. Together, they remind the viewer of old video games.</p>
+                <p>The code below includes the variables within the <code>:root</code> CSS selector for use throughout the CSS file.</p>
+                <p>Please note: The "text" color meets WCAG AA standards on "primary", "tertiary", "light neutral", and "background". "Background" meets AA standards on "secondary", "dark neutral", and "text". All other combinations should be tested before deployment.</p>
+
+                <div class="color-example">
+                    <div class="color-row">
+                        <div class="color-block primary">
+                            <p>Primary</p>
+                        </div>
+                        <div class="color-block secondary">
+                            <p>Secondary</p>
+                        </div>
+                        <div class="color-block tertiary">
+                            <p>Tertiary</p>
+                        </div>
+                        <div class="color-block hover">
+                            <p>Hover</p>
+                        </div>
+                    </div>
+                    <div class="color-row">
+                        <div class="color-block text">
+                            <p>Text</p>
+                        </div>
+                        <div class="color-block dark-neutral">
+                            <p>Dark Neutral</p>
+                        </div>
+                        <div class="color-block light-neutral">
+                            <p>Light Neutral</p>
+                        </div>
+                        <div class="color-block background">
+                            <p>Background</p>
+                        </div>
+                    </div>
+                    <div class="color-row">
+                        <div class="color-block error">
+                            <p>Error</p>
+                        </div>
+                        <div class="color-block warning">
+                            <p>Warning</p>
+                        </div>
+                        <div class="color-block success">
+                            <p>Success</p>
+                        </div>
+                        <div class="color-block info">
+                            <p>Info</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="code-blocks">
+                    <div class="block">
+                        <p class="title">CSS</p>
+<!-- Apologies; this looks super weird because of the way the browser reads the <pre> tags with whitespace. Keeping them where they're supposed to go was causing so many issues with extra tabs in the blocks. -->
+<pre><code>:root {
+    --primary: #A8B880;
+    --secondary: #D7DBB6;
+    --tertiary: #555D40;
+    --hover: #636D4C;
+    --text: #1C1D20;
+    --dark-neutral: #646768;
+    --light-neutral: #BBBDC2;
+    --background: #EBEFF3;
+}</code></pre>
+                    </div>
+                </div>
+
+                <div class="link-to-top">
+                    <a href="#top">
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 26 26">
+                            <!-- Generator: Adobe Illustrator 28.7.1, SVG Export Plug-In . SVG Version: 1.2.0 Build 142)  -->
+                            <g>
+                            <g id="Layer_1" shape-rendering="crispEdges">
+                                <rect x="2" width="22" height="2"/>
+                                <rect y="2" width="2" height="22"/>
+                                <rect x="24" y="2" width="2" height="22"/>
+                                <polygon points="20 11 20 13 18 13 18 12 17 12 17 11 16 11 16 10 15 10 15 9 14 9 14 21 12 21 12 9 11 9 11 10 10 10 10 11 9 11 9 12 8 12 8 13 6 13 6 11 7 11 7 10 8 10 8 9 9 9 9 8 10 8 10 7 11 7 11 6 12 6 12 5 14 5 14 6 15 6 15 7 16 7 16 8 17 8 17 9 18 9 18 10 19 10 19 11 20 11"/>
+                                <rect x="2" y="24" width="22" height="2"/>
+                            </g>
+                            </g>
+                        </svg>
+                    Back to Top
+                    </a>
+                </div>
+            </section>
+
+            <section id="typography">
+                <h2>Typography</h2>
+                <p>The Press Play UI kit features three different free Google Fonts typefaces: Silkscreen for large headings, Jersey 20 for subheadings, and Rubik for body copy. Silkscreen's pixelated qualities contribute to the nostalgic feel of the kit, while Rubik is a legible, but geometric, typeface. Jersey 20 is also pixelated, but is a good balance between the abstract shapes of Silkscreen and the simple lines of Rubik.</p>
+                <p>Silkscreen should only be used for the largest headings, as it becomes unreadable at smaller sizes. Jersey 20 works well for smaller headings, but Rubik should be the go-to for any lengthier blocks of text. The below CSS code includes rules for H1 to H3 as well as paragraphs. Generally, the rules for paragraphs should be placed within the <code>body</code> selector so it is the default for other text-based items.</p>
+
+                <div class="type-example">
+                    <h1>Silkscreen - Headings</h1>
+                    <h2>Jersey 20 - Subheadings</h2>
+                    <p>Rubik - Body Copy</p>
+                </div>
+
+                <div class="code-blocks">
+                    <div class="block">
+                        <p class="title">CSS</p>
+<pre><code>:root {
+    --header-font: "Silkscreen", sans-serif;
+    --subheader-font: "Jersey 20", sans-serif;
+    --body-font: "Rubik", sans-serif;
+}
+
+h1 {
+    font-family: var(--header-font);
+    font-size: 2rem;
+}
+
+h2 {
+    font-family: var(--subheader-font);
+    font-size: 1.8rem;
+}
+
+h3 {
+    font-family: var(--subheader-font);
+    font-size: 1.5rem;
+}
+
+p {
+    font-family: var(--body-font);
+    font-size: 1rem;
+    line-height: 1.5em;
+}
+</code></pre>
+                    </div>
+                </div>
+
+                <div class="link-to-top">
+                    <a href="#top">
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 26 26">
+                            <!-- Generator: Adobe Illustrator 28.7.1, SVG Export Plug-In . SVG Version: 1.2.0 Build 142)  -->
+                            <g>
+                            <g id="Layer_1" shape-rendering="crispEdges">
+                                <rect x="2" width="22" height="2"/>
+                                <rect y="2" width="2" height="22"/>
+                                <rect x="24" y="2" width="2" height="22"/>
+                                <polygon points="20 11 20 13 18 13 18 12 17 12 17 11 16 11 16 10 15 10 15 9 14 9 14 21 12 21 12 9 11 9 11 10 10 10 10 11 9 11 9 12 8 12 8 13 6 13 6 11 7 11 7 10 8 10 8 9 9 9 9 8 10 8 10 7 11 7 11 6 12 6 12 5 14 5 14 6 15 6 15 7 16 7 16 8 17 8 17 9 18 9 18 10 19 10 19 11 20 11"/>
+                                <rect x="2" y="24" width="22" height="2"/>
+                            </g>
+                            </g>
+                        </svg>
+                    Back to Top
+                    </a>
+                </div>
+            </section>
+
+            <section id="links">
+                <h2>Links</h2>
+
+                <p>Link styling utilizes the tertiary color of the color scheme. Links can also be styled with <code>text-decoration: none;</code> to remove the default underline; however, it is a good indication other than color that a link is there.</p>
+
+                <div class="example">
+                    <a href="#">This is a link.</a>
+                </div>
+
+                <div class="code-blocks">
+                    <div class="block">
+                        <p class="title">HTML</p>
+<pre><code>&lt;a href=&quot;#&quot;&gt;This is a link.&lt;/a&gt;</code></pre>
+                    </div>
+                    <div class="block">
+                        <p class="title">CSS</p>
+<pre><code>a {
+    color: var(--tertiary);
+}
+
+a:hover {
+    color: var(--hover);
+}
+
+a:focus {
+    border: 0.15rem dashed var(--tertiary);
+}</code></pre>
+                    </div>
+                </div>
+
+                <div class="link-to-top">
+                    <a href="#top">
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 26 26">
+                            <!-- Generator: Adobe Illustrator 28.7.1, SVG Export Plug-In . SVG Version: 1.2.0 Build 142)  -->
+                            <g>
+                            <g id="Layer_1" shape-rendering="crispEdges">
+                                <rect x="2" width="22" height="2"/>
+                                <rect y="2" width="2" height="22"/>
+                                <rect x="24" y="2" width="2" height="22"/>
+                                <polygon points="20 11 20 13 18 13 18 12 17 12 17 11 16 11 16 10 15 10 15 9 14 9 14 21 12 21 12 9 11 9 11 10 10 10 10 11 9 11 9 12 8 12 8 13 6 13 6 11 7 11 7 10 8 10 8 9 9 9 9 8 10 8 10 7 11 7 11 6 12 6 12 5 14 5 14 6 15 6 15 7 16 7 16 8 17 8 17 9 18 9 18 10 19 10 19 11 20 11"/>
+                                <rect x="2" y="24" width="22" height="2"/>
+                            </g>
+                            </g>
+                        </svg>
+                    Back to Top
+                    </a>
+                </div>
+            </section>
+
+            <section id="buttons">
+                <h2>Buttons</h2>
+                <p>Buttons can take on a variety of contents, whether text alone, text with an icon, or an icon only. The below examples use the HTML <code>&lt;button&gt;</code> element, but regular links can also be styled as buttons by adding a CSS class. Due to potential color contrast issues, the buttons have been styled with a border.</p>
+                <p>(Note: Press Play icons are a custom-made pixel icon set, saved as SVGs. They may be made available upon request.)</p>
+
+                <div class="example">
+                    <button class="btn-primary">Primary Button</button>
+                    <button class="btn-secondary">Secondary Button</button>
+                    <button class="btn-primary">
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 26 26">
+                            <!-- Generator: Adobe Illustrator 28.7.1, SVG Export Plug-In . SVG Version: 1.2.0 Build 142)  -->
+                            <g>
+                              <g id="Layer_1" shape-rendering="crispEdges">
+                                <rect x="2" width="22" height="2"/>
+                                <rect y="2" width="2" height="22"/>
+                                <rect x="24" y="2" width="2" height="22"/>
+                                <path d="M20,12v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-2v1h-1v1h-1v1h-1v1h-1v1h-1v1h-1v1h-1v2h1v7h14v-7h1v-2h-1ZM14,19v-4h-2v4h-4v-7h1v-1h1v-1h1v-1h1v-1h2v1h1v1h1v1h1v1h1v7h-4Z"/>
+                                <rect x="2" y="24" width="22" height="2"/>
+                              </g>
+                            </g>
+                        </svg>
+                        Button With Icon
+                    </button>
+                    <button class="btn-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 26 26">
+                            <!-- Generator: Adobe Illustrator 28.7.1, SVG Export Plug-In . SVG Version: 1.2.0 Build 142)  -->
+                            <g>
+                              <g id="Layer_1" shape-rendering="crispEdges">
+                                <rect x="2" width="22" height="2"/>
+                                <rect y="2" width="2" height="22"/>
+                                <rect x="24" y="2" width="2" height="22"/>
+                                <path d="M20,12v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-2v1h-1v1h-1v1h-1v1h-1v1h-1v1h-1v1h-1v2h1v7h14v-7h1v-2h-1ZM14,19v-4h-2v4h-4v-7h1v-1h1v-1h1v-1h1v-1h2v1h1v1h1v1h1v1h1v7h-4Z"/>
+                                <rect x="2" y="24" width="22" height="2"/>
+                              </g>
+                            </g>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="code-blocks">
+                    <div class="block">
+                        <p class="title">HTML</p>
+<pre><code>&lt;button class=&quot;btn-primary&quot;&gt;Primary Button&lt;/button&gt;
+&lt;button class=&quot;btn-primary&quot;&gt;Secondary Button&lt;/button&gt;
+&lt;button class=&quot;btn-primary&quot;&gt;[svg here] Button With Icon&lt;/button&gt;
+&lt;button class=&quot;btn-primary&quot;&gt;[svg here]&lt;/button&gt;
+</code></pre>
+                    </div>
+                    <div class="block">
+                        <p class="title">CSS</p>
+<pre><code>button {
+    padding: 0.5rem 0.6rem;
+    font-family: var(--subheader-font);
+    font-size: 1.2rem;
+    border-radius: 0;
+    border: none;
+
+    &.btn-primary {
+        background-color: var(--light-primary);
+        border: 0.15rem solid var(--light-text);
+
+        svg {
+            height: 1.2rem;
+            width: 1.2rem;
+            margin-right: 0.15rem;
+            margin-bottom: -0.15rem;
+            fill: var(--light-text);
+        }
+    }
+
+    &.btn-primary:hover {
+        background-color: var(--light-secondary);
+    }
+
+    &.btn-secondary {
+        background-color: transparent;
+        color: var(--light-tertiary);
+        border: 0.15rem solid var(--light-tertiary);
+    }
+
+    &.btn-secondary:hover {
+        background-color: var(--light-secondary);
+    }
+
+    &.btn-icon {
+        padding: 0;
+        background-color: transparent;
+
+        svg {
+            height: 2rem;
+            width: 2rem;
+            fill: var(--light-tertiary);
+        }
+    }
+
+    &.btn-icon:hover {
+        svg {
+            fill: var(--light-primary);
+        }
+    }
+}</code></pre>
+                    </div>
+                </div>
+
+                <div class="link-to-top">
+                    <a href="#top">
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 26 26">
+                            <!-- Generator: Adobe Illustrator 28.7.1, SVG Export Plug-In . SVG Version: 1.2.0 Build 142)  -->
+                            <g>
+                            <g id="Layer_1" shape-rendering="crispEdges">
+                                <rect x="2" width="22" height="2"/>
+                                <rect y="2" width="2" height="22"/>
+                                <rect x="24" y="2" width="2" height="22"/>
+                                <polygon points="20 11 20 13 18 13 18 12 17 12 17 11 16 11 16 10 15 10 15 9 14 9 14 21 12 21 12 9 11 9 11 10 10 10 10 11 9 11 9 12 8 12 8 13 6 13 6 11 7 11 7 10 8 10 8 9 9 9 9 8 10 8 10 7 11 7 11 6 12 6 12 5 14 5 14 6 15 6 15 7 16 7 16 8 17 8 17 9 18 9 18 10 19 10 19 11 20 11"/>
+                                <rect x="2" y="24" width="22" height="2"/>
+                            </g>
+                            </g>
+                        </svg>
+                    Back to Top
+                    </a>
+                </div>
+            </section>
+
+            <section id="tags">
+                <h2>Tags</h2>
+                <p>Press Play's tags are fairly similar to the buttons. The tag itself will require some JavaScript work to make it functional; however, only the visual styling has been included here.</p>
+
+                <div class="example">
+                    <button class="tag-primary">Primary Tag
+                        <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 26 26">
+                            <!-- Generator: Adobe Illustrator 29.0.0, SVG Export Plug-In . SVG Version: 2.1.0 Build 186)  -->
+                            <g id="Layer_11" data-name="Layer_1" shape-rendering="crispEdges">
+                              <polygon points="15 12 15 14 16 14 16 15 17 15 17 16 18 16 18 17 19 17 19 18 20 18 20 20 18 20 18 19 17 19 17 18 16 18 16 17 15 17 15 16 14 16 14 15 12 15 12 16 11 16 11 17 10 17 10 18 9 18 9 19 8 19 8 20 6 20 6 18 7 18 7 17 8 17 8 16 9 16 9 15 10 15 10 14 11 14 11 12 10 12 10 11 9 11 9 10 8 10 8 9 7 9 7 8 6 8 6 6 8 6 8 7 9 7 9 8 10 8 10 9 11 9 11 10 12 10 12 11 14 11 14 10 15 10 15 9 16 9 16 8 17 8 17 7 18 7 18 6 20 6 20 8 19 8 19 9 18 9 18 10 17 10 17 11 16 11 16 12 15 12"/>
+                            </g>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="code-blocks">
+                    <div class="block">
+                        <p class="title">HTML</p>
+<pre><code>&lt;button class=&quot;tag-primary&quot;&gt;Primary Tag [svg here] &lt;/button&gt;</code></pre>
+                    </div>
+                    <div class="block">
+                        <p class="title">CSS</p>
+<pre><code>button {
+    padding: 0.5rem 0.6rem;
+    font-family: var(--subheader-font);
+    font-size: 1.2rem;
+    border-radius: 0;
+    border: none;
+
+    svg {
+        height: 1.2rem;
+        width: 1.2rem;
+        margin-bottom: -0.15rem;
+        fill: var(--light-text);
+    }
+
+    &.tag-primary {
+        background-color: var(--light-primary);
+        border: 0.15rem solid var(--light-text);
+    }
+}</code></pre>
+                    </div>
+                </div>
+
+                <div class="link-to-top">
+                    <a href="#top">
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 26 26">
+                            <!-- Generator: Adobe Illustrator 28.7.1, SVG Export Plug-In . SVG Version: 1.2.0 Build 142)  -->
+                            <g>
+                            <g id="Layer_1" shape-rendering="crispEdges">
+                                <rect x="2" width="22" height="2"/>
+                                <rect y="2" width="2" height="22"/>
+                                <rect x="24" y="2" width="2" height="22"/>
+                                <polygon points="20 11 20 13 18 13 18 12 17 12 17 11 16 11 16 10 15 10 15 9 14 9 14 21 12 21 12 9 11 9 11 10 10 10 10 11 9 11 9 12 8 12 8 13 6 13 6 11 7 11 7 10 8 10 8 9 9 9 9 8 10 8 10 7 11 7 11 6 12 6 12 5 14 5 14 6 15 6 15 7 16 7 16 8 17 8 17 9 18 9 18 10 19 10 19 11 20 11"/>
+                                <rect x="2" y="24" width="22" height="2"/>
+                            </g>
+                            </g>
+                        </svg>
+                    Back to Top
+                    </a>
+                </div>
+            </section>
+
+            <section id="menus">
+                <h2>Menus</h2>
+                <p>The menus are built mainly on H2 and H3 elements. Icons can be added using <code>::before</code> and <code>::after</code> pseudoelements for dropdowns or for better indication of where the menu item leads. You can see an example of Press Play menu items in the sidebar on this page.</p>
+
+                <div class="example">
+                    <div class="nav-example">
+                        <a href="#">Menu Item</a>
+                        <a href="#" class="sub-menu">Submenu Item</a>
+                        <a href="#" class="sub-menu">Submenu Item</a>
+                        <a href="#">Menu Item</a>
+                    </div>
+                </div>
+
+                <div class="code-blocks">
+                    <div class="block">
+                        <p class="title">HTML</p>
+<pre><code>&lt;nav&gt;
+    &lt;a href=&quot;#&quot;&gt;Menu Item&lt;/a&gt;
+    &lt;a href=&quot;#&quot; class=&quot;sub-menu&quot;&gt;Submenu Item&lt;/a&gt;
+    &lt;a href=&quot;#&quot; class=&quot;sub-menu&quot;&gt;Submenu Item&lt;/a&gt;
+    &lt;a href=&quot;#&quot;&gt;Menu Item&lt;/a&gt;
+&lt;/nav&gt;</code></pre>
+                    </div>
+                    <div class="block">
+                        <p class="title">CSS</p>
+<pre><code>nav {
+    padding: 1rem;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25em;
+
+    a {
+        color: var(--text);
+        font-family: var(--subheader-font);
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: var(--tertiary);
+    }
+
+    .sub-menu {
+        margin-left: 0.75rem;
+        font-size: 1.25rem;
+    }
+}</code></pre>
+                    </div>
+                </div>
+
+                <div class="link-to-top">
+                    <a href="#top">
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 26 26">
+                            <!-- Generator: Adobe Illustrator 28.7.1, SVG Export Plug-In . SVG Version: 1.2.0 Build 142)  -->
+                            <g>
+                            <g id="Layer_1" shape-rendering="crispEdges">
+                                <rect x="2" width="22" height="2"/>
+                                <rect y="2" width="2" height="22"/>
+                                <rect x="24" y="2" width="2" height="22"/>
+                                <polygon points="20 11 20 13 18 13 18 12 17 12 17 11 16 11 16 10 15 10 15 9 14 9 14 21 12 21 12 9 11 9 11 10 10 10 10 11 9 11 9 12 8 12 8 13 6 13 6 11 7 11 7 10 8 10 8 9 9 9 9 8 10 8 10 7 11 7 11 6 12 6 12 5 14 5 14 6 15 6 15 7 16 7 16 8 17 8 17 9 18 9 18 10 19 10 19 11 20 11"/>
+                                <rect x="2" y="24" width="22" height="2"/>
+                            </g>
+                            </g>
+                        </svg>
+                    Back to Top
+                    </a>
+                </div>
+            </section>
+
+            <section id="form-items">
+                <h2>Form Items</h2>
+                <p>Form items can be difficult to style, and the code can get complex. The below three examples include little CSS. These can be used for any sort of contact form, login area, or survey.</p>
+                <h3 id="text-inputs">Labeled Text Inputs</h3>
+                <div class="example">
+                    <label for="text-input">Text Input</label>
+                    <input type="text" id="text-input" name="text-input"/>
+                </div>
+
+                <div class="code-blocks">
+                    <div class="block">
+                        <p class="title">HTML</p>
+<pre><code>&lt;label for=&quot;text&quot;&gt;Text Input&lt;/label&gt;
+&lt;input type=&quot;text&quot; id=&quot;text&quot; name=&quot;text&quot;&gt;</code></pre>
+                    </div>
+                </div>
+
+                <h3 id="checkboxes">Checkboxes</h3>
+                <div class="example">
+                    <input type="checkbox" id="checkbox" name="checkbox"/>
+                    <label for="checkbox">Checkbox</label>
+                </div>
+
+                <div class="code-blocks">
+                    <div class="block">
+                        <p class="title">HTML</p>
+<pre><code>&lt;input type=&quot;checkbox&quot; id=&quot;checkbox&quot; name=&quot;checkbox&quot;&gt;
+&lt;label for=&quot;checkbox&quot;&gt;Checkbox&lt;/label&gt;</code></pre>
+                    </div>
+                </div>
+
+                <h3 id="radio-buttons">Radio Buttons</h3>
+                <div class="example">
+                    <input type="radio" id="radio" name="radio" />
+                    <label for="radio">Radio Button</label>
+                </div>
+
+                <div class="code-blocks">
+                    <div class="block">
+                        <p class="title">HTML</p>
+<pre><code>&lt;input type=&quot;radio&quot; id=&quot;radio&quot; name=&quot;radio&quot;&gt;
+&lt;label for=&quot;radio&quot;&gt;Radio&lt;/label&gt;</code></pre>
+                    </div>
+                </div>
+
+                <div class="link-to-top">
+                    <a href="#top">
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 26 26">
+                            <!-- Generator: Adobe Illustrator 28.7.1, SVG Export Plug-In . SVG Version: 1.2.0 Build 142)  -->
+                            <g>
+                            <g id="Layer_1" shape-rendering="crispEdges">
+                                <rect x="2" width="22" height="2"/>
+                                <rect y="2" width="2" height="22"/>
+                                <rect x="24" y="2" width="2" height="22"/>
+                                <polygon points="20 11 20 13 18 13 18 12 17 12 17 11 16 11 16 10 15 10 15 9 14 9 14 21 12 21 12 9 11 9 11 10 10 10 10 11 9 11 9 12 8 12 8 13 6 13 6 11 7 11 7 10 8 10 8 9 9 9 9 8 10 8 10 7 11 7 11 6 12 6 12 5 14 5 14 6 15 6 15 7 16 7 16 8 17 8 17 9 18 9 18 10 19 10 19 11 20 11"/>
+                                <rect x="2" y="24" width="22" height="2"/>
+                            </g>
+                            </g>
+                        </svg>
+                    Back to Top
+                    </a>
+                </div>
+            </section>
+
+            <!-- Some parts I had planned to get to, but ultimately ran out of time for. Will likely add them in the future. -->
+            <!-- <section id="modals">
+                <h2>Modals (Pop-Ups)</h2>
+
+                <div class="link-to-top">
+                    <a href="#top">
+                    Back to Top
+                    </a>
+                </div>
+            </section>
+
+            <section id="cards">
+                <h2>Cards</h2>
+                <p>The composition of a card is fairly similar to the modal, but it is meant for use with an image and may or may not be a pop-up.</p>
+
+                <div class="link-to-top">
+                    <a href="#top">
+                    Back to Top
+                    </a>
+                </div>
+            </section> -->
+        </main>
+        <footer>
+            <p>&copy; 2024 <a href="http://elisabethkaseda.com" target="_blank">Elisabeth Kaseda</a></p>
+        </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
